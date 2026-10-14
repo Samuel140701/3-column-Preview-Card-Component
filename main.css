@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: lightgrey;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 920px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    height: 450px;
+    width: 350px;
+    
+}
+
+@media (max-width: 900px) {
+  .flex-container {
+    flex-direction: column;
+    max-width: 327px;
+    margin: 64px 0;
+  }
+  
+  .item {
+    width: 100%;
+    padding: 36px;
+  }
+}
+
+.sedans {
+    background-color: orange;
+}
+
+.suvs {
+    background-color: rgb(17, 188, 188);
+}
+
+.luxury {
+    background-color: rgb(5, 61, 61);
+}
+
+.card-icon {
+    justify-self: flex-start;
+}
+
+.card img {
+    width: 64px;
+    margin-bottom: 35px;
+}
+
+.card h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 80px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    width: fit-content;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sedans .btn {
+    color: orange;
+    margin-bottom: auto;
+}
+
+.sedans .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.suvs .btn {
+    color: rgb(17, 188, 188);
+}
+
+.suvs .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.luxury .btn {
+    color: rgb(5, 61, 61);
+}
+
+.luxury .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}*/
+
