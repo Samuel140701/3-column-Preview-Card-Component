@@ -13,15 +13,15 @@ body {
     align-items: center;
 }
 
-
-
 .flex-container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     max-width: 920px;
     border-radius: 8px;
     overflow: hidden;
-    height: fit-content;
+    height: 90dvh;
 }
 
 .item {
@@ -50,19 +50,47 @@ body {
 }
 
 .sedans {
-    background-color: orange;
+    background-color: #dc8124;
+}
+
+.sedans h2 {
+    margin-right: auto;
+    padding: 30px;
+}
+
+.sedans p {
+    padding: 20px 20px 20px 30px;
 }
 
 .suvs {
-    background-color: rgb(17, 188, 188);
+    background-color: #016972;
+}
+
+.suvs h2 {
+    margin-right: auto;
+    padding: 30px;
+}
+
+.suvs p {
+    padding: 20px 20px 20px 30px;
 }
 
 .luxury {
-    background-color: rgb(5, 61, 61);
+    background-color: #00403f;
+}
+
+.luxury h2 {
+    margin-right: auto;
+    padding: 30px;
+}
+
+.luxury p {
+    padding: 20px 20px 20px 30px;
 }
 
 .card-icon {
-    justify-self: flex-start;
+    margin-right: auto;
+    padding-left: 30px;
 }
 
 .card img {
@@ -93,11 +121,13 @@ body {
     font-size: 15px;
     width: fit-content;
     transition: background-color 0.2s ease, color 0.2s ease;
+    margin-right: auto;
+    margin-top: auto;
+    transform: translateX(35px);
 }
 
 .sedans .btn {
-    color: orange;
-    margin-bottom: auto;
+    color: #dc8124;
 }
 
 .sedans .btn:hover {
@@ -107,7 +137,7 @@ body {
 }
 
 .suvs .btn {
-    color: rgb(17, 188, 188);
+    color: #016972;
 }
 
 .suvs .btn:hover {
@@ -117,7 +147,7 @@ body {
 }
 
 .luxury .btn {
-    color: rgb(5, 61, 61);
+    color: #00403f;
 }
 
 .luxury .btn:hover {
@@ -129,5 +159,4 @@ body {
 footer {
     display: flex;
     flex-direction: column;
-}*/
-
+}
