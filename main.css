@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: "Heebo", sans-serif;
     background-color: lightgrey;
     min-height: 100vh;
     display: flex;
@@ -33,20 +33,6 @@ body {
     color: #fff;
     height: 450px;
     width: 350px;
-    
-}
-
-@media (max-width: 900px) {
-  .flex-container {
-    flex-direction: column;
-    max-width: 327px;
-    margin: 64px 0;
-  }
-  
-  .item {
-    width: 100%;
-    padding: 36px;
-  }
 }
 
 .sedans {
@@ -159,4 +145,35 @@ body {
 footer {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    body {
+        font-family: "Heebo", sans-serif;
+        background-color: lightgrey;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+    }
+
+  .flex-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 327px;
+        margin: 64px 0;
+        height: fit-content;
+    }
+  
+  .item {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        height: 450px;
+        width: 350px;
+    }
 }
